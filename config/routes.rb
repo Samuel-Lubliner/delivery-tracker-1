@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   # Routes for the Delivery resource:
 
+  post("/mark_as_received/:path_id", { :controller => "deliveries", :action => "mark_as_received" })
+
+
   # CREATE
   post("/insert_delivery", { :controller => "deliveries", :action => "create" })
           
